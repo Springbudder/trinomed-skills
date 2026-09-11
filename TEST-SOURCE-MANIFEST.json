@@ -1,0 +1,15 @@
+{
+  "sourceRepository": "https://github.com/Springbudder/trinomed",
+  "sourceCommit": "987271c64e529274e1573226ce5107c23d4c9d06",
+  "files": [
+    {
+      "path": "tests/ai-frontier-document-markdown.test.py",
+      "sourcePath": "__tests__/ai-frontier-document-markdown.test.py",
+      "sourceBlob": "66ee5522ae25bb922395b5e62cb9a52e7392ce59",
+      "sourceSha256": "bfc50a14899ad55948420fb3bbd019e62d4bba1840fba1a323d10b7ddc032ce0",
+      "sha256": "8db74f76b825622797565c6ab44b6eefc6a0504912e7ee44bf3c7b129493a9c7",
+      "modification": "Only SCRIPT converter location: scripts/ai-frontier-sandbox/skills/document-markdown/convert.py -> skills/document-markdown/convert.py",
+      "testCases": 10
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "repository": "https://github.com/anthropics/skills",
+  "commit": "41bbe19d1a1a7eaab5e7bb9050a417e5c6cffc8f",
+  "sourcePath": "skills/skill-creator",
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE.txt",
+  "adaptedAt": "2026-09-10",
+  "modifications": [
+    "SKILL.md: Removed CLI description optimization and all references to its scripts; kept the draft-test-review-improve methodology.",
+    "SKILL.md: Replaced parallel/subagent test execution with one test at a time in the current conversation; Step 1 only prepares inputs and output paths, and Step 3 executes the tests. Removed blind comparisons and unavailable subagent timing notifications.",
+    "SKILL.md: Uses upstream static eval-viewer output; removed dedicated baseline/analyst execution instructions and persistent viewer-server instructions.",
+    "SKILL.md: Replaced Claude in prose with 你, generalized the upstream conversation-specific section title and product-specific wording, and added AI 前沿专用 workspace installation/offline guidance.",
+    "references/schemas.md: Removed the comparison.json and analysis.json schemas belonging to the removed blind-comparison flow; replaced subagent timing instructions with observed current-session measurements. Removed the extra blank line at EOF. Remaining schemas are retained.",
+    "SKILL.md: Distinguishes sandbox output paths from archived workspace paths; installation requires confirming the actual root SKILL.md and resource-relative layout. No automatic layout repair is introduced."
+  ],
+  "omitted": [
+    "agents/analyzer.md",
+    "agents/comparator.md",
+    "assets/eval_review.html",
+    "scripts/generate_report.py",
+    "scripts/improve_description.py",
+    "scripts/run_eval.py",
+    "scripts/run_loop.py",
+    "scripts/utils.py"
+  ],
+  "files": [
+    {
+      "path": "LICENSE.txt",
+      "upstreamSha256": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+      "bundledSha256": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+      "modified": false
+    },
+    {
+      "path": "SKILL.md",
+      "upstreamSha256": "dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf",
+      "bundledSha256": "0cba6e269552ea65580e25dc5e4b0af38873502d6f4e1d8d9026162a26b27e69",
+      "modified": true
+    },
+    {
+      "path": "agents/grader.md",
+      "upstreamSha256": "57134da0c1a4eea33fbd74a1c9c44aa814f07d6bc64de303edb586f941e5d21a",
+      "bundledSha256": "57134da0c1a4eea33fbd74a1c9c44aa814f07d6bc64de303edb586f941e5d21a",
+      "modified": false
+    },
+    {
+      "path": "eval-viewer/generate_review.py",
+      "upstreamSha256": "fc9d1b9243fe5ab6012ebd579bd76d0035de1b79fd3b969de114defab26478fb",
+      "bundledSha256": "fc9d1b9243fe5ab6012ebd579bd76d0035de1b79fd3b969de114defab26478fb",
+      "modified": false
+    },
+    {
+      "path": "eval-viewer/viewer.html",
+      "upstreamSha256": "a53213426ee1100441d701a3a0d49cda7a842f992d2c36463f4d3cc0258575fa",
+      "bundledSha256": "a53213426ee1100441d701a3a0d49cda7a842f992d2c36463f4d3cc0258575fa",
+      "modified": false
+    },
+    {
+      "path": "references/schemas.md",
+      "upstreamSha256": "8e8876180a8989b406a4d3edddf875b04cdfd5805cc8616686d552b11ce4455f",
+      "bundledSha256": "52ad22b4e5feeb5c52a1d9931a118ce57d0abe87f7208f38dcb14024d8e84672",
+      "modified": true
+    },
+    {
+      "path": "scripts/__init__.py",
+      "upstreamSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bundledSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified": false
+    },
+    {
+      "path": "scripts/aggregate_benchmark.py",
+      "upstreamSha256": "123ef128ea5ccc01a4b1ac212ef5567f21e9c13d3d240609780beeb3200c49aa",
+      "bundledSha256": "123ef128ea5ccc01a4b1ac212ef5567f21e9c13d3d240609780beeb3200c49aa",
+      "modified": false
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "upstreamSha256": "1a33059b0db1ef73375d46d513e5ea81369d2e8838c970597b0d52ddef8d1c0f",
+      "bundledSha256": "1a33059b0db1ef73375d46d513e5ea81369d2e8838c970597b0d52ddef8d1c0f",
+      "modified": false
+    },
+    {
+      "path": "scripts/quick_validate.py",
+      "upstreamSha256": "67cf5703402013936c8fb75ad6a1afecd8841d45cc5e606b634eb05825fde365",
+      "bundledSha256": "67cf5703402013936c8fb75ad6a1afecd8841d45cc5e606b634eb05825fde365",
+      "modified": false
+    }
+  ],
+  "repositoryOnlyFiles": [
+    ".gitattributes"
+  ]
+}
